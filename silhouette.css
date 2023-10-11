@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    width: 70%;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #4eb3d1;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white; /* Change this to your desired text color */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #c6e5ed; /* New text color for hover */
+    font-size: 1.35rem; /* You can adjust the font size as needed */
+}
+
+/* footer op bodem
+/* Voeg deze CSS toe aan je bestaande stijlblad */
+html, body {
+    height: 100%; /* Zorg ervoor dat de body de volledige hoogte van de viewport heeft */
+    margin: 0; /* Verwijder de standaardmarges */
+    padding: 0; /* Verwijder de standaardvullingen */
+    display: flex; /* Gebruik flexbox voor de hoofdcontainer */
+    flex-direction: column; /* Stapel de secties van boven naar beneden */
+}
+
+main {
+    flex-grow: 1; /* Laat het hoofdgedeelte groeien om de beschikbare ruimte in te nemen */
+}
+
+footer {
+    flex-shrink: 0; /* Voorkom dat de footer krimpt als er weinig inhoud is */
+}
+
+.creation-border-right {
+    border: 4px solid #c6e5ed; /* Change border color to #BA181B */
+    border-left-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    background-color: #f5f3f4;
+}
+
+.creation-border-left {
+    border: 4px solid #c6e5ed; /* Change border color to #BA181B */
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    background-color: #f5f3f4;
+}
+
+.center-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Adjust alignment as needed */
+}
+
+/* Add a custom class for rounded border */
+.rounded-border {
+    border-radius: 10px;
+}
+
+/* Style for the course card */
+.course-card {
+    border: 2px solid #c6e5ed; /* Red border color */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    padding: 20px; /* Add some padding to the card */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* On hover, slightly lift the card */
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Add these styles to change the color of social icons on hover */
+.social-icon {
+    color: #fff; /* Set the default color */
+    transition: color 0.3s ease-in-out; /* Add transition effect */
+}
+
+.social-icon:hover {
+    color: #c6e5ed; /* Change the color on hover */
+}
+
+/* Add a hover effect to the creation images */
+.creation-img:hover {
+    transform: scale(1.05); /* Increase the size on hover */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+/* Button color */
+.btn-info {
+    background-color: #4eb3d1; /* Change this to the desired color */
+    color: #fff; /* Text color for the button */
+    border-color: #ffffff;
+}
+
+/* Button hover state */
+.btn-info:hover {
+    background-color: #c6e5ed; /* Change this to the desired hover color */
+    color: #ffffff;
+    border-color: #4eb3d1;
+}
+
+/* Center image within modal body */
+.modal-body img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+img {
+    border-radius: 5px;
+}
+
